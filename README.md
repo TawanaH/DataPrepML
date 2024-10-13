@@ -5,7 +5,6 @@
 ## Table of Contents
 
 - [Features](#features)
-- [Installation](#installation)
 - [Usage](#usage)
   - [Resizing Images](#resizing-images)
   - [Moving Files](#moving-files)
@@ -21,8 +20,6 @@
 - **CSV Generation**: Create CSV files listing filenames with optional labeling for dataset annotations.
 - **Logging**: Integrated logging to monitor the progress and handle errors gracefully.
 - **Flexible and Extensible**: Designed to be easily integrated into various data preprocessing pipelines.
-
-## Installation
 
 ## Usage
 
