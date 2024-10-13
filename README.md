@@ -13,7 +13,6 @@
 - [Example Workflow](#example-workflow)
 - [Contributing](#contributing)
 - [License](#license)
-- [Contact](#contact)
 
 ## Features
 
@@ -29,10 +28,36 @@
 
 ## Example Workflow
 
+```
+from dataprepml import resize_images, move_files, generate_csv
+
+# Step 1: Resize Images
+resize_images(
+    source_dir='data/raw_images',
+    dest_dir='data/resized_images',
+    output_size=(224, 224)
+)
+
+# Step 2: Move Processed Images to Training Directory
+move_files(
+    source_dir='data/resized_images',
+    dest_dir='data/train_images',
+    file_extension='.png'
+)
+
+# Step 3: Generate CSV for Training Labels
+generate_csv(
+    csv_filename='data/train_labels.csv',
+    source_dir='data/train_images',
+    columns=['filename', 'label'],
+    label='dog'
+)
+```
+
 ## Conributing
+
+Contributions are welcome! If you have suggestions for improvements or want to report issues, feel free to open an issue or submit a pull request.
 
 ## License
 
 This project is licensed under the MIT License.
-
-## Contact
