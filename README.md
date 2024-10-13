@@ -97,7 +97,7 @@ dp.generate_csv(
 )
 ```
 
-## Conributing
+## Contributing
 
 Contributions are welcome! If you have suggestions for improvements or want to report issues, feel free to open an issue or submit a pull request.
 
