@@ -26,7 +26,48 @@
 
 ## Usage
 
-### Resizing Images
+- ### Resizing Images
+  ```
+  resize_images(
+      source_dir='path/to/source/images',
+      dest_dir='path/to/destination/images',
+      output_size=(256, 256)  # Width, Height in pixels
+  )
+  ```
+
+- ### Moving Files
+  ```
+  # Move all files
+  move_files(
+      source_dir='path/to/source/files',
+      dest_dir='path/to/destination/files'
+  )
+  
+  # Move only JPEG images
+  move_files(
+      source_dir='path/to/source/images',
+      dest_dir='path/to/destination/images',
+      file_extension='.jpg'
+  )
+  ```
+
+- ### Generating CSV Files
+  ```
+  # Without labels
+  generate_csv(
+      csv_filename='dataset.csv',
+      source_dir='path/to/files',
+      columns=['filename']
+  )
+  
+  # With labels
+  generate_csv(
+      csv_filename='dataset.csv',
+      source_dir='path/to/files',
+      columns=['filename', 'label'],
+      label='cat'
+  )
+  ```
 
 ## Example Workflow
 
