@@ -26,7 +26,7 @@
 
 ## Usage
 
-- **Resizing Images**:
+### Resizing Images
 
 ## Example Workflow
 
