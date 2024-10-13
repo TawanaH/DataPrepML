@@ -26,27 +26,29 @@
 
 ## Usage
 
+- **Resizing Images**:
+
 ## Example Workflow
 
 ```
-from dataprepml import resize_images, move_files, generate_csv
+import DataPrep as dp
 
 # Step 1: Resize Images
-resize_images(
+dp.resize_images(
     source_dir='data/raw_images',
     dest_dir='data/resized_images',
     output_size=(224, 224)
 )
 
 # Step 2: Move Processed Images to Training Directory
-move_files(
+dp.move_files(
     source_dir='data/resized_images',
     dest_dir='data/train_images',
     file_extension='.png'
 )
 
 # Step 3: Generate CSV for Training Labels
-generate_csv(
+dp.generate_csv(
     csv_filename='data/train_labels.csv',
     source_dir='data/train_images',
     columns=['filename', 'label'],
