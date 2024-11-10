@@ -8,7 +8,7 @@
 - [Usage](#usage)
   - [Resizing Images](#resizing-images)
   - [Moving Files](#moving-files)
-  - - [Moving Files](#copying-files)
+  - [Copying Files](#copying-files)
   - [Generating CSV Files](#generating-csv-files)
 - [Example Workflow](#example-workflow)
 - [Contributing](#contributing)
