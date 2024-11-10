@@ -57,7 +57,7 @@
   )
   ```
 
-  - ### Copying Files
+- ### Copying Files
   ```
   # Copy all files
   copy_files(
