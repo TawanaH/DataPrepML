@@ -8,6 +8,7 @@
 - [Usage](#usage)
   - [Resizing Images](#resizing-images)
   - [Moving Files](#moving-files)
+  - - [Moving Files](#copying-files)
   - [Generating CSV Files](#generating-csv-files)
 - [Example Workflow](#example-workflow)
 - [Contributing](#contributing)
@@ -16,7 +17,7 @@
 ## Features
 
 - **Image Resizing**: Easily resize batches of images to a specified dimension.
-- **File Management**: Move files between directories based on file extensions.
+- **File Management**: Move and copy files between directories based on file extensions.
 - **CSV Generation**: Create CSV files listing filenames with optional labeling for dataset annotations.
 - **Logging**: Integrated logging to monitor the progress and handle errors gracefully.
 - **Flexible and Extensible**: Designed to be easily integrated into various data preprocessing pipelines.
@@ -45,6 +46,38 @@
       source_dir='path/to/source/images',
       dest_dir='path/to/destination/images',
       file_extension='.jpg'
+  )
+
+  # Move only 50% JPEG images
+  move_files(
+      source_dir='path/to/source/images',
+      dest_dir='path/to/destination/images',
+      file_extension='.jpg',
+      percentage=50
+  )
+  ```
+
+  - ### Copying Files
+  ```
+  # Copy all files
+  copy_files(
+      source_dir='path/to/source/files',
+      dest_dir='path/to/destination/files'
+  )
+  
+  # Copy only PNG images
+  copy_files(
+      source_dir='path/to/source/images',
+      dest_dir='path/to/destination/images',
+      file_extension='.png'
+  )
+
+  # Copy only 50% PNG images
+  copy_files(
+      source_dir='path/to/source/images',
+      dest_dir='path/to/destination/images',
+      file_extension='.png',
+      percentage=50
   )
   ```
 
